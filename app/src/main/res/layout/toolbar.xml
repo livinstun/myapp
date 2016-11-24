@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    android:background="@color/colorPrimary"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:theme="@style/ToolBarStyle"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

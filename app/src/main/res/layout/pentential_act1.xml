@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="എല്ലാവരും ഒന്നിച്ച് ഏറ്റുചൊല്ലുന്നു: "
+        style="@style/mass_comments" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="സര്‍വ്വശക്തനായ ദൈവത്തോടും സഹോദരരേ, നിങ്ങളോടും ഞാന്‍ ഏറ്റുപറയുന്നു.\n വിചാരത്താലും വാക്കാലും പ്രവൃത്തിയാലും ഉപേക്ഷയാലും ഞാന്‍ വളരെയേറെ പാപം ചെയ്തു പോയി."
+        style="@style/mass_people" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="പിഴയിടിച്ചു കൊണ്ട് "
+        style="@style/mass_comments" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="എന്‍റെ പിഴ, എന്‍റെ പിഴ, എന്‍റെ വലിയ പിഴ \n ആകയാല്‍ നിത്യകന്യകയായ പരിശുദ്ധ മറിയത്തോടും \nഎല്ലാ മാലാഖമാരോടും വിശുദ്ധരോടും സഹോദരരേ നിങ്ങളോടും ഞാന്‍ അപേക്ഷിക്കുന്നു \nഎനിക്കുവേണ്ടി നമ്മുടെ കര്‍ത്താവായ ദൈവത്തോട് പ്രാര്‍ത്ഥിക്കണമേ."
+        style="@style/mass_people" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="പരോഹിതന്‍ പാപമോചനപ്രാര്‍ത്ഥന തുടരുന്നു: "
+        style="@style/mass_comments" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="സര്‍വ്വശക്തനായ ദൈവം കനിഞ്ഞ്, പാപങ്ങള്‍ പൊറുത്ത് നമ്മെ നിത്യജീവിതത്തിലേക്ക് നയിക്കുമാറാകട്ടെ."
+        style="@style/mass_priest" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=" ആമേന്‍."
+        style="@style/mass_people" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="പരോഹിതന്‍:"
+        style="@style/mass_comments" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="കര്‍ത്താവേ കനിയണമേ."
+        style="@style/mass_priest" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ജനം: "
+        style="@style/mass_comments" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="കര്‍ത്താവേ കനിയണമേ."
+        style="@style/mass_people" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="പരോഹിതന്‍:"
+        style="@style/mass_comments" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ക്രിസ്തുവേ കനിയണമേ."
+        style="@style/mass_priest" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ജനം:"
+        style="@style/mass_comments" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ക്രിസ്തുവേ കനിയണമേ."
+        style="@style/mass_people" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="പരോഹിതന്‍:"
+        style="@style/mass_comments" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="കര്‍ത്താവേ കനിയണമേ."
+        style="@style/mass_priest" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ജനം: "
+        style="@style/mass_comments" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="കര്‍ത്താവേ കനിയണമേ."
+        style="@style/mass_people" />
+</LinearLayout>

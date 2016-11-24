@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="5.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:text="Text Size" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip">
+
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="200.0dip"
+            android:layout_height="50.0dip"
+            android:max="7" />
+
+        <TextView
+            android:id="@+id/rangetext"
+            android:layout_width="100.0dip"
+            android:layout_height="50.0dip" />
+    </LinearLayout>
+
+    <TextView
+        android:textStyle="italic"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_size_help" />
+</LinearLayout>

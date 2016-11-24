@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="പരോഹിതനോ ഡീക്കനോ മറ്റൊരു ശുശ്രൂഷകനോ, താഴെ കൊടുത്തിരിക്കുന്നതോ മറ്റു പ്രാര്‍ത്ഥനകളോ ‘കര്‍ത്താവേ കനിയണമേ’ എന്നതിനോട് ചേര്‍ത്തു ചൊല്ലുന്നു. "
+        style="@style/mass_comments" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="തകര്‍ന്ന ഹൃദയങ്ങളെ സുഖപ്പെടുത്തുവാന്‍ അയയ്ക്കപ്പെട്ട കര്‍ത്താവേ, കനിയണമേ:"
+        style="@style/mass_priest" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ജനം: "
+        style="@style/mass_comments" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="കര്‍ത്താവേ കനിയണമേ. Or: Kyrie, eleison."
+        style="@style/mass_people" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=" പരോഹിതന്‍:"
+        style="@style/mass_comments" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="പാപികളെ വിളിക്കുവാന്‍ ആഗതനായ ക്രിസ്തുവേ, കനിയണമേ."
+        style="@style/mass_priest" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ജനം: "
+        style="@style/mass_comments" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="കരിസ്തുവേ കനിയണമേ. Or: Christe, eleison."
+        style="@style/mass_people" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=" പരോഹിതന്‍:"
+        style="@style/mass_comments" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ഞങ്ങള്‍ക്കുവേണ്ടി മാദ്ധ്യസ്ഥം വഹിക്കുവാന്‍ പിതാവിന്‍റെ വലത്തുഭാഗത്ത് ഇരിക്കുന്ന കര്‍ത്താവേ, കനിയണമേ."
+        style="@style/mass_priest" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ജനം: "
+        style="@style/mass_comments" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="കര്‍ത്താവേ കനിയണമേ. Or: Kyrie, eleison."
+        style="@style/mass_people" />
+</LinearLayout>

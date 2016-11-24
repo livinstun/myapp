@@ -1,0 +1,143 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
+        <item name="actionModeBackground">@android:color/black</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:textColorSecondary">@android:color/black</item>
+        <item name="android:background">@android:color/black</item>
+        <item name="android:height">40.0dip</item>
+        <item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleText</item>
+        <item name="titleTextStyle">@style/AppTheme.ActionBar.TitleText</item>
+    </style>
+    <style name="AppTheme.ActionBar.TitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_margin">0.0dip</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="@style/ThemeOverlay.AppCompat.Light" />
+    <style name="Base.AlertDialog.AppCompat" parent="@android:style/Widget">
+        <item name="android:layout">@layout/abc_alert_dialog_material</item>
+        <item name="listLayout">@layout/abc_select_dialog_material</item>
+        <item name="multiChoiceItemLayout">@layout/select_dialog_multichoice_material</item>
+        <item name="singleChoiceItemLayout">@layout/select_dialog_singlechoice_material</item>
+        <item name="listItemLayout">@layout/select_dialog_item_material</item>
+    </style>
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionModeStyle">@style/LStyled.ActionMode</item>
+    </style>
+    <style name="LStyled.ActionMode" parent="@style/Widget.AppCompat.ActionMode">
+        <item name="background">@color/color_action_mode_bg</item>
+    </style>
+
+    <style name="Theme.AppCompat.NoActionBar" parent="@style/Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Design" parent="@style/Theme.AppCompat">
+        <item name="textColorError">@color/design_textinput_error_color_dark</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+  <style name="ToolBarStyle" parent="@style/Theme.AppCompat">
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="actionMenuTextColor">@android:color/black</item>
+    </style>
+    <style name="Toolbar.TitleText" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MyActionBar.MenuTextStyle"
+        parent="style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+ 
+    <style name="about_text">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/defaulttextcolor</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="mass_comments">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">#ff8b0000</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+        <item name="android:selectable">true</item>
+    </style>
+    <style name="mass_header">
+        <item name="android:textSize">19.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/defaulttextcolor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+        <item name="android:selectable">true</item>
+    </style>
+    <style name="mass_header_main">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/defaulttextcolor</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+        <item name="android:selectable">true</item>
+    </style>
+    <style name="mass_people">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/defaulttextcolor</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+        <item name="android:selectable">true</item>
+    </style>
+    <style name="mass_priest">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/defaulttextcolor</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+        <item name="android:selectable">true</item>
+    </style>
+    <style name="reading_ending">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/defaulttextcolor</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+    </style>
+    <style name="reading_headings">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/defaulttextcolor</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="text_headings">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/defaulttextcolor</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="20.0dip">
+
+    <ImageView
+        android:layout_width="64.0dip"
+        android:layout_height="64.0dip"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20.0dip"
+        android:background="@drawable/krlcc"
+        android:contentDescription="KRLCC" />
+
+    <TextView
+        style="@style/about_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="An Andriod application for Lectionary readings and order of Mass in Malayalam for Roman Rite Liturgy" />
+
+    <TextView
+        style="@style/about_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="A Joint venture of KRLCBC Liturgy Commission and Bible Commission"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/about_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Courtesy: Lectionary readings and Order of Mass are used with permission of KRLCBC Liturgy Commission" />
+
+    <TextView
+        style="@style/about_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Launched on 9th May 2016 by His Grace Most Rev. Soosai Pakiam M., the President, KRLCBC." />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Copyright © 2016 - Commissions for Bible and Liturgy, Kerala Region Latin Catholic Bishops Council (KRLCBC)"
+        android:textSize="12.0sp" />
+</LinearLayout>

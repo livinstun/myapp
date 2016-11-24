@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/prathivachanam_heading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/prathivachanam"
+        android:textIsSelectable="true"
+        style="@style/reading_headings" />
+
+    <TextView
+        android:textColor="@color/defaulttextcolor"
+        android:id="@+id/prathivachanam_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:textIsSelectable="true" />
+</LinearLayout>
