@@ -83,11 +83,21 @@
     <style name="mass_comments">
         <item name="android:textSize">18.0sp</item>
         <item name="android:textStyle">italic</item>
-        <item name="android:textColor">#ff8b0000</item>
+        <item name="android:textColor">@color/redshade</item>
         <item name="android:layout_marginTop">10.0dip</item>
         <item name="android:layout_marginBottom">10.0dip</item>
         <item name="android:selectable">true</item>
     </style>
+
+    <style name="mass_comments2">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+        <item name="android:selectable">true</item>
+    </style>
+
     <style name="mass_header">
         <item name="android:textSize">19.0dip</item>
         <item name="android:textStyle">bold</item>

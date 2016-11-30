@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity{
 
             @Override
             public void onPageSelected(int position) {
-                System.out.print("here "+position);
+                //System.out.print("here "+position);
                 if(position == 0){
                     Fragment currentView = adapter.getItem(position);
                     SharedPreferences sharedPref = obj.getApplicationContext().getSharedPreferences(

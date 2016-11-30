@@ -5,6 +5,7 @@
     android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -14,21 +15,56 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="സര്‍വ്വശക്തനായ ദൈവത്തോടും സഹോദരരേ, നിങ്ങളോടും ഞാന്‍ ഏറ്റുപറയുന്നു.\n വിചാരത്താലും വാക്കാലും പ്രവൃത്തിയാലും ഉപേക്ഷയാലും ഞാന്‍ വളരെയേറെ പാപം ചെയ്തു പോയി."
+        android:text="സര്‍വ്വശക്തനായ ദൈവത്തോടും\nസഹോദരരേ, നിങ്ങളോടും ഞാന്‍ ഏറ്റുപറയുന്നു.\nഎന്തെന്നാൽ വിചാരത്താലും വാക്കാലും പ്രവൃത്തിയാലും ഉപേക്ഷയാലും ഞാന്‍ വളരെയേറെ പാപം ചെയ്തു പോയി."
         style="@style/mass_people" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="പിഴയിടിച്ചു കൊണ്ട് "
+        android:text="(നെഞ്ചിലടിച്ചുകൊണ്ടു പറയുന്നു)"
         style="@style/mass_comments" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="എന്‍റെ പിഴ, എന്‍റെ പിഴ, എന്‍റെ വലിയ പിഴ \n ആകയാല്‍ നിത്യകന്യകയായ പരിശുദ്ധ മറിയത്തോടും \nഎല്ലാ മാലാഖമാരോടും വിശുദ്ധരോടും സഹോദരരേ നിങ്ങളോടും ഞാന്‍ അപേക്ഷിക്കുന്നു \nഎനിക്കുവേണ്ടി നമ്മുടെ കര്‍ത്താവായ ദൈവത്തോട് പ്രാര്‍ത്ഥിക്കണമേ."
+        android:text="എന്‍റെ പിഴ, എന്‍റെ പിഴ, എന്‍റെ വലിയ പിഴ"
         style="@style/mass_people" />
 
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="(അതിനുശേഷം തുടരുന്നു)"
+        style="@style/mass_comments" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ആകയാല്‍ നിത്യകന്യകയായ പരിശുദ്ധ മറിയത്തോടും എല്ലാ മാലാഖമാരോടും വിശുദ്ധരോടും സഹോദരരേ നിങ്ങളോടും ഞാന്‍ അപേക്ഷിക്കുന്നു എനിക്കുവേണ്ടി നമ്മുടെ കര്‍ത്താവായ ദൈവത്തോട് പ്രാര്‍ത്ഥിക്കണമേ."
+        style="@style/mass_people" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="*********************************"
+        style="@style/mass_comments2"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="(ഞായ​റാ​ഴ്ച​ക​ളിൽ തീർത്ഥം തളി​ക്കു​മ്പോൾ പാടു​ന്നു.)"
+        style="@style/mass_comments" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="കണ്ടു ഞാൻ മോദ​മാർന്നു \nകണ്ടു ഞാൻ നീർപ്ര​വാഹം \nദേവാ​ല​യ​ത്തിന്റെ വാമ​ഭാ​ഗ​ത്തു\nനിന്നുൽഗ​മിക്കും ജല​ധാ​ര.\n\nഈ ജല​ധാ​ര​യിൽനി​ന്നായ് \nനീര​ണി​യു​ന്ന​വ​രെല്ലാം \nനിർമ്മ​ല​ഗാത്രരായ്​-​ക​ല്മ​ഷ​ഹീ​ന​രായ് \nഇമ്മ​ഹി​ത​ത്തിൽ വിള​ങ്ങി. \n\nവാഴ്ത്തു​വിൻ രക്ഷ​ക​നാമം \nപാടുവിനല്ലേ​ല്ലൂയ \nകീർത്തനം പാടി- രക്ഷ​ക​നീ​ശനെ \nവാഴ്ത്തു​വി​ന​ല്ലേ​ല്ലൂയ"
+        style="@style/mass_people"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="*********************************"
+        style="@style/mass_comments2"
+        />
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -50,7 +86,7 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="പരോഹിതന്‍:"
+        android:text="പുരോഹിതൻ: "
         style="@style/mass_comments" />
 
     <TextView
@@ -74,7 +110,7 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="പരോഹിതന്‍:"
+        android:text="പുരോഹിതൻ: "
         style="@style/mass_comments" />
 
     <TextView
@@ -98,7 +134,7 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="പരോഹിതന്‍:"
+        android:text="പുരോഹിതൻ: "
         style="@style/mass_comments" />
 
     <TextView

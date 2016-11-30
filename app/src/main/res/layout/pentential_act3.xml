@@ -8,13 +8,25 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="പരോഹിതനോ ഡീക്കനോ മറ്റൊരു ശുശ്രൂഷകനോ, താഴെ കൊടുത്തിരിക്കുന്നതോ മറ്റു പ്രാര്‍ത്ഥനകളോ ‘കര്‍ത്താവേ കനിയണമേ’ എന്നതിനോട് ചേര്‍ത്തു ചൊല്ലുന്നു. "
+        android:text="പുരോ​ഹി​തൻ അനു​താ​പ​കർമ​ത്തി​ലേക്ക് വിശ്വാ​സി​കളെ ക്ഷണി​ക്കു​ന്നു:  "
         style="@style/mass_comments" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="തകര്‍ന്ന ഹൃദയങ്ങളെ സുഖപ്പെടുത്തുവാന്‍ അയയ്ക്കപ്പെട്ട കര്‍ത്താവേ, കനിയണമേ:"
+        android:text="സഹോ​ദ​ര​രേ, ദിവ്യ​ര​ഹസ്യങ്ങൾ കൊണ്ടാടുന്നതിനു നാം യോഗ്യരാ​കേ​ണ്ട​തിന് നമ്മുടെ പാപ​ങ്ങൾ ഏറ്റു​പ​റ​യാം."
+        style="@style/mass_priest" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/mass_comments"
+        android:text="അല്പ​നി​മിഷം മൗനംപാലിക്കു​ന്നു. തുടർന്ന് പുരോ​ഹി​ത​നോ ഡീക്കനോ മറ്റൊരു ശുശ്രൂ​ഷ​കനോ താഴെ കൊടുത്തിരി​ക്കു​ന്നതോ മറ്റുപ്രാർഥ​നപ്ര​ക​ര​ണ​ങ്ങളോ കർത്താവേ കനി​യ​ണമേ എന്ന​തിനോട് ചേർത്തുചൊ​ല്ലു​ന്നു."
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ഹൃദയം തകർന്നവരെ സുഖപ്പെടുത്താൻ അയ​യ്ക്ക​പ്പെട്ട കർത്താ​വേ, കനിയണ​മേ."
         style="@style/mass_priest" />
 
     <TextView
@@ -26,7 +38,7 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="കര്‍ത്താവേ കനിയണമേ. Or: Kyrie, eleison."
+        android:text="കർത്താവേ, കനി​യ​ണ​മേ."
         style="@style/mass_people" />
 
     <TextView

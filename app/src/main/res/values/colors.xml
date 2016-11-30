@@ -10,6 +10,7 @@
     <color name="defaulttextcolor">#000000</color>
     <color name="white">#FFFFFF</color>
 
+    <color name="redshade">#ff8b0000</color>
 
     <color name="color_action_mode_bg">#009688</color>
 </resources>

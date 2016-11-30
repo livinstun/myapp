@@ -8,25 +8,39 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text=" പരോഹിതന്‍:"
+        android:text="പരോ​ഹി​തൻ അനു​താ​പ​കർമ​ത്തി​ലേക്ക് വിശ്വാ​സി​കളെ ക്ഷണി​ക്കുന്നു:"
         style="@style/mass_comments" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="കര്‍ത്താവേ അങ്ങേക്കെതിരായി ഞങ്ങള്‍ പാപം ചെയ്തുപോയി.."
+        android:text="സഹോ​ദ​ര​രേ, ദിവ്യ​ര​ഹസ്യങ്ങൾ കൊണ്ടാ​ടു​ന്ന​തി​നു നാം യോഗ്യരാകേ​ണ്ട​തിന് നമ്മുടെ പാപ​ങ്ങൾ ഏറ്റു​പ​റ​യാം."
         style="@style/mass_priest" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="ജനം: "
+        android:text="അല്പ​നി​മിഷം മൗനംപാലി​ക്കു​ന്നു. \nതടർന്ന് പുരോ​ഹി​തൻ ചൊല്ലുന്നു:"
         style="@style/mass_comments" />
-
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="കര്‍ത്താവേ, ഞങ്ങളില്‍ കൃപയുണ്ടാകണമേ."
+        android:text=" പരോഹിതന്‍:"
+        style="@style/mass_comments" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="കർത്താ​വേ, ഞങ്ങ​ളിൽ കനി​യ​ണമേ."
+        style="@style/mass_priest" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ജനം: "
+        style="@style/mass_comments" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="എന്തെ​ന്നാൽ, അങ്ങേ​ക്കെ​തി​രായി ഞങ്ങൾ പാപംചെയ്തുപോയി."
         style="@style/mass_people" />
 
     <TextView
@@ -38,7 +52,7 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="അങ്ങയുടെ സംരക്ഷണം ഞങ്ങള്‍ക്കു നല്കണമേ.."
+        android:text="കർത്താ​വേ, അങ്ങേ കാരുണ്യം ഞങ്ങൾക്കു കാണിച്ചുതരണ​മേ."
         style="@style/mass_priest" />
 
     <TextView
@@ -50,96 +64,29 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="കര്‍ത്താവേ, ഞങ്ങളില്‍ കൃപയുണ്ടാകണമേ."
+        android:text="അങ്ങേ രക്ഷ ഞങ്ങൾക്കു നല്കുകയും ചെയ്യണമേ."
         style="@style/mass_people" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="പരോഹിതന്‍ പാപമോചനപ്രാര്‍ത്ഥന തുടരുന്നു:"
+        android:text="പരോ​ഹി​തന്റെ പാപ​മോ​ചനപ്രാർഥന തുടർന്നുവ​രുന്നു: "
         style="@style/mass_comments" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="സര്‍വ്വശക്തനായ ദൈവം കനിഞ്ഞ്, പാപങ്ങള്‍ പൊറുത്ത് നമ്മെ നിത്യജീവിതത്തിലേക്ക് നയിക്കുമാറാകട്ടെ. "
+        android:text="സർവ​ശ​ക്ത​നായ ദൈവം കനി​ഞ്ഞ്, നമ്മുടെ പാപ​ങ്ങൾ പൊറു​ത്ത്, നമ്മെ നിത്യ​ജീ​വി​ത​ത്തി​ലേക്കു നയിക്കുമാറാകട്ടെ."
         style="@style/mass_priest" />
 
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ജനം: "
+        style="@style/mass_comments" />
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text=" ആമേന്‍."
-        style="@style/mass_people" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="പരോഹിതന്‍:"
-        style="@style/mass_comments" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="കര്‍ത്താവേ കനിയണമേ."
-        style="@style/mass_priest" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="ജനം: "
-        style="@style/mass_comments" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="കര്‍ത്താവേ കനിയണമേ."
-        style="@style/mass_people" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="പരോഹിതന്‍:"
-        style="@style/mass_comments" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="ക്രിസ്തുവേ കനിയണമേ."
-        style="@style/mass_priest" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="ജനം:"
-        style="@style/mass_comments" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="ക്രിസ്തുവേ കനിയണമേ."
-        style="@style/mass_people" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="പരോഹിതന്‍:"
-        style="@style/mass_comments" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="കര്‍ത്താവേ കനിയണമേ."
-        style="@style/mass_priest" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="ജനം: "
-        style="@style/mass_comments" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="കര്‍ത്താവേ കനിയണമേ."
         style="@style/mass_people" />
 </LinearLayout>
