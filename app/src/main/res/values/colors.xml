@@ -13,4 +13,6 @@
     <color name="redshade">#ff8b0000</color>
 
     <color name="color_action_mode_bg">#009688</color>
+
+    <color name="menubgcolor">#D3D3D3</color>
 </resources>
