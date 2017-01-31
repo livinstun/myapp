@@ -26,7 +26,7 @@
         android:id="@+id/gospel_ending"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:text="@string/reading_ending"
+        android:text="@string/gospel_ending"
         android:textIsSelectable="true"
         style="@style/reading_ending" />
 </LinearLayout>

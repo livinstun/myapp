@@ -10,7 +10,8 @@
     <string name="second_reading">രണ്ടാം വായന</string>
     <string name="prathivachanam">പ്രതിവചനസങ്കീർത്തനം</string>
     <string name="gospel">സുവിശേഷം</string>
-    <string name="reading_ending">ദൈവവചനമാണു നാം കേട്ടത്.</string>
+    <string name="reading_ending">കർത്താവിന്റെ വചനം.</string>
+    <string name="gospel_ending">കർത്താവിന്റെ സുവിശേഷം.</string>
 
     <string name="preference_file_key">settings</string>
 
