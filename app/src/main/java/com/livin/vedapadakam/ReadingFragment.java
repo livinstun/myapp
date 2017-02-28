@@ -209,7 +209,7 @@ public class ReadingFragment extends Fragment {
         try {
 
             min = formatter.parse("14-5-2016");
-            max = formatter.parse("28-2-2017");
+            max = formatter.parse("31-3-2017");
             objDate= formatter.parse(date);
             if((objDate.compareTo(min)>=0 && objDate.compareTo(max)<=0 )||objDate.compareTo(formatter.parse("9-5-2016"))==0)
             {
@@ -225,7 +225,7 @@ public class ReadingFragment extends Fragment {
         }
         else if(withtoast)
         {
-            Toast.makeText(getActivity().getApplicationContext(), "Please enter a date between 14th May 2016 and 28th February 2017", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity().getApplicationContext(), "Please enter a date between 14th May 2016 and 31th March 2017", Toast.LENGTH_SHORT).show();
         }
     }
 
