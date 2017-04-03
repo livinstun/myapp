@@ -10,6 +10,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 
@@ -55,8 +56,7 @@ public class ReadingFragment extends Fragment {
         textsizeadder = sharedPref.getInt(getString(R.string.text_size), 3);
         View rootView = inflater.inflate(R.layout.reading_main, contain, false);
 
-        SQLiteDatabase dbe=getActivity().openOrCreateDatabase(DBConstants.DB_NAME, SQLiteDatabase.OPEN_READWRITE, null);
-        dbe.close();
+
         DbManager DBMObj = DbManager.getInstance();
         DBMObj.checkDataBase(getActivity().getApplicationContext());
         FloatingActionButton fab = (FloatingActionButton) rootView.findViewById(R.id.fab);
@@ -94,76 +94,95 @@ public class ReadingFragment extends Fragment {
 
             View header = activity.getLayoutInflater().inflate(R.layout.header, container, false);
 
+            String headertext = r.getHeading();
+
+
             TextView heading = (TextView) header.findViewById(R.id.heading);
             heading.setTextSize(SIZE_HEADER);
+            if("".equals(headertext)){
+                heading.setVisibility(View.GONE);
+            }
+
             TextView date_view = (TextView) header.findViewById(R.id.date);
             date_view.setTextSize(SIZE_HEADER);
 
             SimpleDateFormat formatter2 = new SimpleDateFormat("dd MMM yyyy");
             date_view.setText(formatter2.format(objDate));
-            heading.setText(r.getHeading());
+            heading.setText(headertext);
 
             obj.container.addView(header);
 
-            TextView head;
-            TextView tail;
-            TextView readingText;
+            boolean ishtml = r.isSpecial();
 
-            View first_reading = activity.getLayoutInflater().inflate(R.layout.first_reading, obj.container, false);
-            readingText = (TextView) first_reading.findViewById(R.id.first_reading_text);
-            readingText.setTextSize(SIZE_TEXT);
-            readingText.setText(r.getR1());
+            if(ishtml){
+                TextView txtView = new TextView(activity.getApplicationContext());
+                txtView.setText(Html.fromHtml(r.getR1()));
+                txtView.setTextIsSelectable(true);
+                txtView.setTextSize(SIZE_TEXT);
+                txtView.setTextColor(activity.getResources().getColor(R.color.defaulttextcolor));
+                obj.container.addView(txtView);
+            }
+            else {
+                TextView head;
+                TextView tail;
+                TextView readingText;
 
-            head = (TextView) first_reading.findViewById(R.id.first_reading_heading);
-            head.setTextSize(SIZE_HEADER);
-
-            tail = (TextView) first_reading.findViewById(R.id.first_reading_ending);
-            tail.setTextSize(SIZE_TEXT);
-
-            obj.container.addView(first_reading);
-
-            View prathivachanam = activity.getLayoutInflater().inflate(R.layout.prathivachanam, obj.container, false);
-            readingText = (TextView) prathivachanam.findViewById(R.id.prathivachanam_text);
-            readingText.setText(r.getP());
-            readingText.setTextSize(SIZE_TEXT);
-            head = (TextView) prathivachanam.findViewById(R.id.prathivachanam_heading);
-            head.setTextSize(SIZE_HEADER);
-
-            obj.container.addView(prathivachanam);
-
-            if (!"".equals(r.getR2()) && r.getR2() != null) {
-                View second_reading = activity.getLayoutInflater().inflate(R.layout.second_reading, obj.container, false);
-                readingText = (TextView) second_reading.findViewById(R.id.second_reading_text);
-                readingText.setText(r.getR2());
+                View first_reading = activity.getLayoutInflater().inflate(R.layout.first_reading, obj.container, false);
+                readingText = (TextView) first_reading.findViewById(R.id.first_reading_text);
                 readingText.setTextSize(SIZE_TEXT);
+                readingText.setText(r.getR1());
 
-                head = (TextView) second_reading.findViewById(R.id.second_reading_heading);
+                head = (TextView) first_reading.findViewById(R.id.first_reading_heading);
                 head.setTextSize(SIZE_HEADER);
 
-                tail = (TextView) second_reading.findViewById(R.id.second_reading_ending);
+                tail = (TextView) first_reading.findViewById(R.id.first_reading_ending);
                 tail.setTextSize(SIZE_TEXT);
 
-                TextView prathivachanamtext2 = (TextView) second_reading.findViewById(R.id.prathivachanam_text2);
-                prathivachanamtext2.setText(r.getP2());
-                prathivachanamtext2.setTextSize(SIZE_TEXT);
+                obj.container.addView(first_reading);
 
-                obj.container.addView(second_reading);
+                View prathivachanam = activity.getLayoutInflater().inflate(R.layout.prathivachanam, obj.container, false);
+                readingText = (TextView) prathivachanam.findViewById(R.id.prathivachanam_text);
+                readingText.setText(r.getP());
+                readingText.setTextSize(SIZE_TEXT);
+                head = (TextView) prathivachanam.findViewById(R.id.prathivachanam_heading);
+                head.setTextSize(SIZE_HEADER);
 
+                obj.container.addView(prathivachanam);
+
+                if (!"".equals(r.getR2()) && r.getR2() != null) {
+                    View second_reading = activity.getLayoutInflater().inflate(R.layout.second_reading, obj.container, false);
+                    readingText = (TextView) second_reading.findViewById(R.id.second_reading_text);
+                    readingText.setText(r.getR2());
+                    readingText.setTextSize(SIZE_TEXT);
+
+                    head = (TextView) second_reading.findViewById(R.id.second_reading_heading);
+                    head.setTextSize(SIZE_HEADER);
+
+                    tail = (TextView) second_reading.findViewById(R.id.second_reading_ending);
+                    tail.setTextSize(SIZE_TEXT);
+
+                    TextView prathivachanamtext2 = (TextView) second_reading.findViewById(R.id.prathivachanam_text2);
+                    prathivachanamtext2.setText(r.getP2());
+                    prathivachanamtext2.setTextSize(SIZE_TEXT);
+
+                    obj.container.addView(second_reading);
+
+                }
+
+
+                View gospel = activity.getLayoutInflater().inflate(R.layout.gospel, obj.container, false);
+                readingText = (TextView) gospel.findViewById(R.id.gospel_text);
+                readingText.setText(r.getS());
+                readingText.setTextSize(SIZE_TEXT);
+
+                head = (TextView) gospel.findViewById(R.id.gospel_heading);
+                head.setTextSize(SIZE_HEADER);
+
+                tail = (TextView) gospel.findViewById(R.id.gospel_ending);
+                tail.setTextSize(SIZE_TEXT);
+
+                obj.container.addView(gospel);
             }
-
-
-            View gospel = activity.getLayoutInflater().inflate(R.layout.gospel, obj.container, false);
-            readingText = (TextView) gospel.findViewById(R.id.gospel_text);
-            readingText.setText(r.getS());
-            readingText.setTextSize(SIZE_TEXT);
-
-            head = (TextView) gospel.findViewById(R.id.gospel_heading);
-            head.setTextSize(SIZE_HEADER);
-
-            tail = (TextView) gospel.findViewById(R.id.gospel_ending);
-            tail.setTextSize(SIZE_TEXT);
-
-            obj.container.addView(gospel);
         }
     }
 
@@ -209,7 +228,7 @@ public class ReadingFragment extends Fragment {
         try {
 
             min = formatter.parse("14-5-2016");
-            max = formatter.parse("31-3-2017");
+            max = formatter.parse("30-4-2017");
             objDate= formatter.parse(date);
             if((objDate.compareTo(min)>=0 && objDate.compareTo(max)<=0 )||objDate.compareTo(formatter.parse("9-5-2016"))==0)
             {
@@ -225,7 +244,7 @@ public class ReadingFragment extends Fragment {
         }
         else if(withtoast)
         {
-            Toast.makeText(getActivity().getApplicationContext(), "Please enter a date between 14th May 2016 and 31th March 2017", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity().getApplicationContext(), "Please enter a date between 14th May 2016 and 30th April 2017", Toast.LENGTH_SHORT).show();
         }
     }
 

@@ -13,6 +13,7 @@ public class ReadingModel {
     private String p;
     private String p2;
     private String date;
+    private int special;
 
     public ReadingModel(Cursor c)
     {
@@ -24,6 +25,7 @@ public class ReadingModel {
         this.r2 = c.getString(5);
         this.s = c.getString(6);
         this.p2 = c.getString(7);
+        this.special = c.getInt(8);
     }
 
     public int getId() {
@@ -57,4 +59,6 @@ public class ReadingModel {
     public String getDate() {
         return date;
     }
+
+    public boolean isSpecial() { return special == 1;}
 }

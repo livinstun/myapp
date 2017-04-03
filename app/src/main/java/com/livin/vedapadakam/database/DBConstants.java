@@ -12,10 +12,11 @@ public class DBConstants {
     public static final String COL_HEADING = "heading";
     public static final String COL_P = "p";
     public static final String COL_P2 = "p2";
+    public static final String COL_SPECIAL = "isSpecial";
     public static final String TABLE_READING = "reading";
 
     public static final String DB_NAME = "bible.sqlite";
-    public static final int DB_VERSION = 1;
+    public static final int DB_VERSION = 10;
     public static final String KEY_FONT_SIZE = "font_size";
     public static final String KEY_SELECTED_BOOK = "selected_book";
     public static final String KEY_SELECTED_CHAPTER = "selected_chapter";
