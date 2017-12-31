@@ -5,8 +5,10 @@ import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
@@ -15,7 +17,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,6 +38,7 @@ public class ReadingFragment extends Fragment {
 
     public LinearLayout container;
     public TextView heading;
+    public LinearLayout updateLayout;
     public static int textsizeadder;
     public static ReadingFragment obj;
     public static String currentDate;
@@ -68,6 +73,7 @@ public class ReadingFragment extends Fragment {
             }
         });
         container = (LinearLayout)rootView.findViewById(R.id.container);
+        updateLayout = (LinearLayout)rootView.findViewById(R.id.update_layout);
         heading = (TextView)rootView.findViewById(R.id.heading);
         obj = this;
         Date date = new Date();
@@ -85,7 +91,8 @@ public class ReadingFragment extends Fragment {
         DbManager db = DbManager.getInstance();
 
         ArrayList<ReadingModel> models = db.getReading(activity.getApplicationContext(), date);
-
+        if(updateLayout!=null)
+            updateLayout.setVisibility(View.GONE);
         obj.container.removeAllViews();
 
         for (int i = 0; i < models.size(); i++) {
@@ -228,7 +235,7 @@ public class ReadingFragment extends Fragment {
         try {
 
             min = formatter.parse("14-5-2016");
-            max = formatter.parse("30-11-2017");
+            max = formatter.parse("31-1-2018");
             objDate= formatter.parse(date);
             if((objDate.compareTo(min)>=0 && objDate.compareTo(max)<=0 )||objDate.compareTo(formatter.parse("9-5-2016"))==0)
             {
@@ -244,13 +251,32 @@ public class ReadingFragment extends Fragment {
         }
         else if(withtoast)
         {
-            Toast.makeText(getActivity().getApplicationContext(), "Please enter a date between 14th May 2016 and 31st October 2017", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity().getApplicationContext(), "Please enter a date between 14th May 2016 and 31st Januvary 2018", Toast.LENGTH_SHORT).show();
         }
+        else{
+            addUpdatefragment();
+        }
+    }
+
+    public void addUpdatefragment(){
+        obj.container.removeAllViews();
+        updateLayout.setVisibility(View.VISIBLE);
+         Button btn = (Button) updateLayout.findViewById(R.id.btn_update);
+         btn.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent intent = new Intent(Intent.ACTION_VIEW);
+                 intent.setData(Uri.parse("market://details?id=com.livin.vedapadakam"));
+                 startActivity(intent);
+             }
+         });
+
     }
 
     public void updateTextSize(int nextTextSize){
         textsizeadder = nextTextSize;
-        checkDate(currentDate,false);
+        if(currentDate != null)
+            checkDate(currentDate,false);
     }
 
 }

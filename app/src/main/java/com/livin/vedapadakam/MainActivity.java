@@ -4,7 +4,9 @@ package com.livin.vedapadakam;
 
 import android.app.DialogFragment;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -127,6 +129,11 @@ public class MainActivity extends AppCompatActivity{
             DialogFragment newFragment = new AboutFragment();
             newFragment.show(getFragmentManager(), "settings");
             return true;
+        }
+        else if(id == R.id.action_update){
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("market://details?id=com.livin.vedapadakam"));
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);
