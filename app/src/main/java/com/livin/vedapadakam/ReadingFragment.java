@@ -251,7 +251,7 @@ public class ReadingFragment extends Fragment {
         }
         else if(withtoast)
         {
-            Toast.makeText(getActivity().getApplicationContext(), "Please enter a date between 14th May 2016 and 31st Januvary 2018", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity().getApplicationContext(), "Please enter a date between 14th May 2016 and 31st January 2018", Toast.LENGTH_SHORT).show();
         }
         else{
             addUpdatefragment();

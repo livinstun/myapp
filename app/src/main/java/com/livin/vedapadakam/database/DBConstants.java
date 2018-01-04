@@ -16,7 +16,7 @@ public class DBConstants {
     public static final String TABLE_READING = "reading";
 
     public static final String DB_NAME = "bible.sqlite";
-    public static final int DB_VERSION = 19;
+    public static final int DB_VERSION = 20;
     public static final String KEY_FONT_SIZE = "font_size";
     public static final String KEY_SELECTED_BOOK = "selected_book";
     public static final String KEY_SELECTED_CHAPTER = "selected_chapter";
