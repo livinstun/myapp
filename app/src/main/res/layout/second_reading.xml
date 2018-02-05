@@ -30,10 +30,4 @@
         android:text="@string/reading_ending"
         android:textIsSelectable="true" />
 
-    <TextView
-        android:textColor="@color/defaulttextcolor"
-        android:id="@+id/prathivachanam_text2"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5.0dip" />
 </LinearLayout>

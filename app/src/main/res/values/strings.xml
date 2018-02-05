@@ -7,12 +7,22 @@
     <string name="livin">Livin</string>
     <string name="livin_m">ലിവിൻ ഡിക്രൂസ്</string>
 
+    <string name="pravesaka_prabitham">പ്രവേശകപ്രഭണിതം</string>
+    <string name="samithi_prayer">സമിതിപ്രാര്‍ത്ഥന</string>
     <string name="first_reading">ഒന്നാം വായന</string>
     <string name="second_reading">രണ്ടാം വായന</string>
     <string name="prathivachanam">പ്രതിവചനസങ്കീർത്തനം</string>
+    <string name="prathivachanam2">സുവിശേഷ പ്രഘോഷണവാക്യം</string>
     <string name="gospel">സുവിശേഷം</string>
+    <string name="nyvadia_prayer">നൈവേദ്യപ്രാര്‍ത്ഥന</string>
+    <string name="divyakarunya_prabitham">ദിവ്യകാരുണ്യപ്രഭണിതം</string>
+    <string name="divyabojana_prayer">ദിവ്യഭോജനപ്രാര്‍ത്ഥന</string>
+    <string name="prayer_on_people">ജനങ്ങളുടെ മേലുള്ള പ്രാര്‍ത്ഥന</string>
+
     <string name="reading_ending">കർത്താവിന്റെ വചനം.</string>
     <string name="gospel_ending">കർത്താവിന്റെ സുവിശേഷം.</string>
+
+    <string name="Amem">ആമേന്‍</string>
 
     <string name="preference_file_key">settings</string>
 

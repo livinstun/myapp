@@ -13,10 +13,17 @@ public class DBConstants {
     public static final String COL_P = "p";
     public static final String COL_P2 = "p2";
     public static final String COL_SPECIAL = "isSpecial";
+    public static final String COL_PRA = "pra";
+    public static final String COL_SA = "sa";
+    public static final String COL_NY = "ny";
+    public static final String COL_DIV_PRA = "div_pra";
+    public static final String COL_DIVABOJANA = "divyabojana";
+    public static final String COL_JA = "ja";
+
     public static final String TABLE_READING = "reading";
 
     public static final String DB_NAME = "bible.sqlite";
-    public static final int DB_VERSION = 20;
+    public static final int DB_VERSION = 21;
     public static final String KEY_FONT_SIZE = "font_size";
     public static final String KEY_SELECTED_BOOK = "selected_book";
     public static final String KEY_SELECTED_CHAPTER = "selected_chapter";

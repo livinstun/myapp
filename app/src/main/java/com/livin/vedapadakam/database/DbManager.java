@@ -89,7 +89,7 @@ public class DbManager extends DBConstants{
             String path = context.getDatabasePath(DB_NAME).getPath();
             db = SQLiteDatabase.openDatabase(path, null, SQLiteDatabase.OPEN_READWRITE|SQLiteDatabase.NO_LOCALIZED_COLLATORS);
             //db = SQLiteDatabase.openDatabase("iMenu_app",SQLiteDatabase.OPEN_READWRITE, null);
-            Cursor c = db.rawQuery("SELECT "+COL_ID+","+COL_DATE+","+COL_HEADING+","+COL_R1+","+COL_P+","+COL_R2+","+COL_S+","+COL_P2+","+COL_SPECIAL+" FROM "+TABLE_READING+" WHERE "+COL_DATE+" = '"+date+"' ORDER BY "+COL_ID, null);
+            Cursor c = db.rawQuery("SELECT "+COL_ID+","+COL_DATE+","+COL_HEADING+","+COL_PRA+","+COL_SA+","+COL_R1+","+COL_P+","+COL_R2+","+COL_P2+","+COL_S+","+COL_NY+","+COL_DIV_PRA+","+COL_DIVABOJANA+","+COL_JA+","+COL_SPECIAL+" FROM "+TABLE_READING+" WHERE "+COL_DATE+" = '"+date+"' ORDER BY "+COL_ID, null);
             //System.out.println("SELECT "+COL_ID+","+COL_DATE+","+COL_HEADING+","+COL_R1+","+COL_P+","+COL_R2+","+COL_S+","+COL_P2+" FROM "+TABLE_READING+" WHERE "+COL_DATE+" = "+date);
             while (c.moveToNext() ){
               model.add(new ReadingModel(c));

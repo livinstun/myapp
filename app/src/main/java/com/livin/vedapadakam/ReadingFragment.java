@@ -133,6 +133,28 @@ public class ReadingFragment extends Fragment {
                 TextView head;
                 TextView tail;
                 TextView readingText;
+                if (!"".equals(r.getPra()) && r.getPra()!= null) {
+                    View pravesaka_prabitham = activity.getLayoutInflater().inflate(R.layout.pravesaka_prabitham, obj.container, false);
+                    readingText = (TextView) pravesaka_prabitham.findViewById(R.id.pravesaka_prabitham_text);
+                    readingText.setText(r.getPra());
+                    readingText.setTextSize(SIZE_TEXT);
+                    head = (TextView) pravesaka_prabitham.findViewById(R.id.pravesaka_prabitham_heading);
+                    head.setTextSize(SIZE_HEADER);
+
+                    obj.container.addView(pravesaka_prabitham);
+                }
+
+                if (!"".equals(r.getSa()) && r.getSa() != null) {
+                    View samithi_prayer = activity.getLayoutInflater().inflate(R.layout.samithi_prayer, obj.container, false);
+                    readingText = (TextView) samithi_prayer.findViewById(R.id.samithi_prayer_text);
+                    readingText.setText(r.getSa());
+                    readingText.setTextSize(SIZE_TEXT);
+                    head = (TextView) samithi_prayer.findViewById(R.id.samithi_prayer_heading);
+                    head.setTextSize(SIZE_HEADER);
+
+                    obj.container.addView(samithi_prayer);
+                }
+
 
                 View first_reading = activity.getLayoutInflater().inflate(R.layout.first_reading, obj.container, false);
                 readingText = (TextView) first_reading.findViewById(R.id.first_reading_text);
@@ -168,12 +190,18 @@ public class ReadingFragment extends Fragment {
                     tail = (TextView) second_reading.findViewById(R.id.second_reading_ending);
                     tail.setTextSize(SIZE_TEXT);
 
-                    TextView prathivachanamtext2 = (TextView) second_reading.findViewById(R.id.prathivachanam_text2);
-                    prathivachanamtext2.setText(r.getP2());
-                    prathivachanamtext2.setTextSize(SIZE_TEXT);
-
                     obj.container.addView(second_reading);
 
+                }
+                if (!"".equals(r.getP2()) && r.getP2() != null) {
+                    View prathivachanam2 = activity.getLayoutInflater().inflate(R.layout.prathivachanam2, obj.container, false);
+                    readingText = (TextView) prathivachanam2.findViewById(R.id.prathivachanam_text2);
+                    readingText.setText(r.getP2());
+                    readingText.setTextSize(SIZE_TEXT);
+                    head = (TextView) prathivachanam2.findViewById(R.id.prathivachanam_heading2);
+                    head.setTextSize(SIZE_HEADER);
+
+                    obj.container.addView(prathivachanam2);
                 }
 
 
@@ -189,6 +217,54 @@ public class ReadingFragment extends Fragment {
                 tail.setTextSize(SIZE_TEXT);
 
                 obj.container.addView(gospel);
+
+
+                if (!"".equals(r.getNy()) && r.getNy()!= null) {
+                    View nyvadia_prayer = activity.getLayoutInflater().inflate(R.layout.nyvadia_prayer, obj.container, false);
+                    readingText = (TextView) nyvadia_prayer.findViewById(R.id.nyvadia_prayer_text);
+                    readingText.setText(r.getNy());
+                    readingText.setTextSize(SIZE_TEXT);
+                    head = (TextView) nyvadia_prayer.findViewById(R.id.nyvadia_prayer_heading);
+                    head.setTextSize(SIZE_HEADER);
+
+                    obj.container.addView(nyvadia_prayer);
+                }
+
+                if (!"".equals(r.getDiv_pra()) && r.getDiv_pra()!= null) {
+                    View divyakarunya_prabitham = activity.getLayoutInflater().inflate(R.layout.divyakarunya_prabitham, obj.container, false);
+                    readingText = (TextView) divyakarunya_prabitham.findViewById(R.id.divyakarunya_prabitham_text);
+                    readingText.setText(r.getDiv_pra());
+                    readingText.setTextSize(SIZE_TEXT);
+                    head = (TextView) divyakarunya_prabitham.findViewById(R.id.divyakarunya_prabitham_heading);
+                    head.setTextSize(SIZE_HEADER);
+
+                    obj.container.addView(divyakarunya_prabitham);
+                }
+
+                if (!"".equals(r.getDivyabojana()) && r.getDivyabojana()!= null) {
+                    View divyabojana_prayer = activity.getLayoutInflater().inflate(R.layout.divyabojana_prayer, obj.container, false);
+                    readingText = (TextView) divyabojana_prayer.findViewById(R.id.divyabojana_prayer_text);
+                    readingText.setText(r.getDivyabojana());
+                    readingText.setTextSize(SIZE_TEXT);
+                    head = (TextView) divyabojana_prayer.findViewById(R.id.divyabojana_prayer_heading);
+                    head.setTextSize(SIZE_HEADER);
+
+                    obj.container.addView(divyabojana_prayer);
+                }
+
+                if (!"".equals(r.getJa()) && r.getJa()!= null) {
+                    View prayer_on_people = activity.getLayoutInflater().inflate(R.layout.prayer_on_people, obj.container, false);
+                    readingText = (TextView) prayer_on_people.findViewById(R.id.prayer_on_people_text);
+                    readingText.setText(r.getJa());
+                    readingText.setTextSize(SIZE_TEXT);
+                    head = (TextView) prayer_on_people.findViewById(R.id.prayer_on_people_heading);
+                    head.setTextSize(SIZE_HEADER);
+
+                    tail = (TextView) prayer_on_people.findViewById(R.id.prayer_on_people_ending);
+                    tail.setTextSize(SIZE_TEXT);
+
+                    obj.container.addView(prayer_on_people);
+                }
             }
         }
     }
@@ -235,7 +311,7 @@ public class ReadingFragment extends Fragment {
         try {
 
             min = formatter.parse("14-5-2016");
-            max = formatter.parse("31-1-2018");
+            max = formatter.parse("28-2-2018");
             objDate= formatter.parse(date);
             if((objDate.compareTo(min)>=0 && objDate.compareTo(max)<=0 )||objDate.compareTo(formatter.parse("9-5-2016"))==0)
             {
@@ -251,7 +327,7 @@ public class ReadingFragment extends Fragment {
         }
         else if(withtoast)
         {
-            Toast.makeText(getActivity().getApplicationContext(), "Please enter a date between 14th May 2016 and 31st January 2018", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity().getApplicationContext(), "Please enter a date between 14th May 2016 and 28th February 2018", Toast.LENGTH_SHORT).show();
         }
         else{
             addUpdatefragment();
