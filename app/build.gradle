@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
     buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId "com.livin.vedapadakam"
         minSdkVersion 17
-        targetSdkVersion 29
-        versionCode 32
-        versionName "7.0"
+        targetSdkVersion 30
+        versionCode 34
+        versionName "7.5"
     }
     buildTypes {
         release {
