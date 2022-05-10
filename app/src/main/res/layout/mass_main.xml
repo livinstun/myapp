@@ -153,6 +153,9 @@
                 android:id="@+id/spinner1"
                 android:background="@drawable/spinnerbg"
                 android:layout_width="fill_parent"
+                android:paddingVertical="20dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                android:spinnerMode="dropdown"
                 android:layout_height="wrap_content" />
 
             <LinearLayout
@@ -739,7 +742,7 @@ At the end of the Homily it is appropriate for there to be a brief silence for r
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="THE EUCHARISTIC PRAYER: സ്തോത്ര​യാഗപ്രാർഥന"
+                android:text="THE EUCHARISTIC PRAYER: സ്തോത്രയാഗ പ്രാർഥന"
                 style="@style/mass_header" />
 
             <TextView
@@ -878,6 +881,7 @@ At the end of the Homily it is appropriate for there to be a brief silence for r
 
             <Spinner
                 android:id="@+id/spinner2"
+                android:paddingVertical="20dp"
                 android:background="@drawable/spinnerbg"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content" />
@@ -886,6 +890,260 @@ At the end of the Homily it is appropriate for there to be a brief silence for r
                 android:id="@+id/container2"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content" />
+
+            <View
+                android:background="#ff000000"
+                android:layout_width="100.0dip"
+                android:layout_height="2.0dip" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="ദിവ്യകാരുണ്യസ്വീകരണകർമം"
+                style="@style/mass_header_main" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="കര്‍ത്തൃ പ്രാര്‍ത്ഥന"
+                style="@style/mass_header" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ജനം നില്‍ക്കുന്നു. പുരോഹിതന്‍ ചൊല്ലുന്നു:"
+                style="@style/mass_comments"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="കരക്ഷാകരമായ കല്പ​നകളാൽ ഉദ്ബോ​ധി​ത​രായും ദിവ്യോ​പ​ദേ​ശത്താൽ രൂപവത്​കൃ​ത​രായും നിർഭയം നമുക്ക് ഏറ്റു ചൊല്ലാം:"
+                style="@style/mass_priest"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="പരോഹിതന്‍, കൈകള്‍ വിരിച്ചുകൊണ്ട്, ജനങ്ങളോടുചേര്‍ന്നു തുടരുന്നു: "
+                style="@style/mass_comments"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="സവര്‍ഗ്ഗസ്ഥനായ ഞങ്ങളുടെ പിതാവേ,
+അങ്ങയുടെ നാമം പൂജിതമാകണമേ,
+അങ്ങയുടെ രാജ്യം വരണമേ,
+അങ്ങയുടെ തിരുമനസ്സ്
+സ്വര്‍ഗ്ഗത്തിലെ പോലെ ഭൂമിയിലുമാകണമേ,
+അന്നന്നു വേണ്ട ആഹാരം ഇന്നു ഞങ്ങള്‍ക്കു തരണമേ,
+ഞങ്ങളോടു തെറ്റു ചെയ്യുന്നവരോടു ഞങ്ങള്‍ ക്ഷമിക്കുന്നതുപോലെ
+ഞങ്ങളുടെ തെറ്റുകള്‍ ഞങ്ങളോടും ക്ഷമിക്കണമേ,
+ഞങ്ങളെ പ്രലോഭനത്തില്‍ ഉള്‍പ്പെടുത്തരുതേ,
+തിന്മയില്‍ നിന്നും ഞങ്ങളെ രക്ഷിക്കണമേ. "
+                style="@style/mass_people" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="പുരോഹി​തൻമാത്രം, കൈകള്‍ വിരിച്ചുകൊണ്ട്, തുടരുന്നു:  "
+                style="@style/mass_comments"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="കര്‍ത്താവേ, എല്ലാ തിന്മകളിലുംനിന്നു ഞങ്ങളെ മോചിക്കണമേ;
+ഞങ്ങ​ളുടെ ദിന​ങ്ങ​ളിൽ സമാ​ധാനം കനി​വാർന്നു നല്ക​ണ​മേ.  അനുഗ്ര​ഹ​പൂർണ​മായപ്രത്യാ​ശയും ഞങ്ങളുടെ രക്ഷ​ക​നായ യേശുക്രിസ്തു​വിന്റെ ആഗ​മ​നവും പ്രതീ​ക്ഷി​ച്ചു​കൊണ്ട് അങ്ങേ കരുണയുടെ സഹാ​യ​ത്താൽ ശക്തിപ്രാ​പിച്ച് ഞങ്ങ​ളെ​പ്പോഴും പാപ​ത്തിൽനിന്ന് മോചി​ത​രാ​കു​കയും എല്ലാ വിപ​ത്തു​ക​ളിലും നിന്ന് സുര​ക്ഷി​ത​രാ​കു​കയും ചെയ്യുമാ​റാ​ക​ട്ടെ."
+                style="@style/mass_priest"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ജനങ്ങള്‍ പ്രഘോഷിക്കുന്നു:"
+                style="@style/mass_comments"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="എന്തുകൊണ്ടെന്നാല്‍ രാജ്യവും ശക്തിയും മഹത്ത്വവും എന്നേക്കും അങ്ങയുടേതാകുന്നു. "
+                style="@style/mass_people"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Then the Priest alone says aloud: "
+                style="@style/mass_comments"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="സമാ​ധാനം ഞാൻ നിങ്ങൾക്കു നല്കുന്നു; എന്റെ സമാ​ധാനം നിങ്ങൾക്കു ഞാൻ തരുന്നു എന്ന് അങ്ങേ അപ്പോസ്ത​ല​ന്മാ​രോട് അരുൾചെ​യ്ത കർത്താ​വായ യേശുക്രി​സ്തുവേ, ഞങ്ങ​ളുടെ പാപങ്ങള​ല്ല, പിന്നെയോ അങ്ങേ സ​ഭ​യുടെ വിശ്വാസം തൃക്കൺപാർത്ത്, അങ്ങേ തിരുവുള്ളമനു​സ​രിച്ച് സഭയ്ക്ക് സമാ​ധാ​നവും എെക്യവും നല്കാൻ കനി​യ​ണ​മേ.
+ "
+                style="@style/mass_priest"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="കൈകൾ കൂപ്പുന്നു."
+                style="@style/mass_comments"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" എന്നെന്നും ജീവിച്ചുവാഴുന്ന അങ്ങു ഞങ്ങളുടെ പ്രാര്‍ത്ഥന കേട്ടരുളണമേ."
+                style="@style/mass_priest"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ജനം: "
+                style="@style/mass_comments"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ആമേന്‍.  "
+                style="@style/mass_people"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="പുരോ​ഹി​തൻ തുടരുന്നു:"
+                style="@style/mass_comments"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" കര്‍ത്താവിന്‍റെ സമാധാനം നിങ്ങളോടുകൂടെ എപ്പോഴും ഉണ്ടായിരിക്കട്ടെ."
+                style="@style/mass_priest"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ജനം: "
+                style="@style/mass_comments"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="അങ്ങയോടും കൂടെ.  "
+                style="@style/mass_people"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="പരികര്‍മ്മി അഥവാ പുരോഹിതന്‍  നിര്‍ദ്ദേശിക്കുന്നു.: "
+                style="@style/mass_comments"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" നി​ങ്ങൾ പര​സ്പരം സമാ​ധാനം ആശം​സി​ക്കു​വിൻ."
+                style="@style/mass_priest"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" സഥലത്തെ പരമ്പരാഗതരീതിയില്‍ സമാധാനത്തിന്‍റെയും ഐക്യത്തിന്‍റെയും സ്നേഹത്തിന്‍റെയും അടയാളമായി ജനങ്ങള്‍ സമാധാനം ആശംസിക്കുന്നു. "
+                style="@style/mass_comments"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="അപ്പം മുറിക്കല്‍  "
+                style="@style/mass_comments"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" നമ്മുടെ കർത്താ​വായ യേശുക്രി​സ്തു​വിന്റെ ശരീ​ര​ര​ക്ത​ങ്ങ​ളുടെ സമ്മിശ്രണം, അവ സ്വീക​രി​ക്കുന്ന നമുക്ക് നിത്യജീവൻപ്രദാനം ചെയ്യു​മാ​റാ​ക​ട്ടെ.
+"
+                style="@style/mass_priest"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" പരോഹിതന്‍ തിരുവോസ്തി വിഭജിക്കുമ്പോള്‍ സമൂഹം പാടുകയോ ചൊല്ലുകയോ ചെയ്യുന്നു:  "
+                style="@style/mass_comments"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ലോകത്തിന്‍റെ പാപങ്ങള്‍ നീക്കുന്ന ദൈവകുഞ്ഞാടേ,\n
+ഞങ്ങളില്‍ കനിയണമേ.\n
+ലോകത്തിന്‍റെ പാപങ്ങള്‍ നീക്കുന്ന ദൈവകുഞ്ഞാടേ,\n
+ഞങ്ങളില്‍ കനിയണമേ.\n
+ലോകത്തിന്‍റെ പാപങ്ങള്‍ നീക്കുന്ന ദൈവകുഞ്ഞാടേ,\n
+ഞങ്ങള്‍ക്ക് സമാധാനം നല്കണമേ. "
+                style="@style/mass_people"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" ജനം മുട്ടുകുത്തുന്നു.\n
+പുരോ​ഹി​തൻ കൈകൾകൂപ്പി, സ്വഗതമായി ചൊല്ലുന്നു: "
+                style="@style/mass_comments"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" കർത്താ​വായ യേശുക്രി​സ്തു​വേ, സജീ​വ​നായ ദൈവ​ത്തിന്റെ പുത്രാ, പിതാ​വിന്റെ ഇഷ്ട​മ​നു​സ​രി​ച്ച്, പരി​ശു​ദ്ധാത്മാ​വിന്റെ സഹക​ര​ണത്തോടെ, അങ്ങേ​ മര​ണ​ത്താൽ ലോകത്തെ അങ്ങ് ഉജ്ജീ​വി​പ്പി​ച്ചുവല്ലോ. അങ്ങേ പരി​ശു​ദ്ധ​മായ ഇൗ ശരീ​രവും രക്തവും​വഴി എന്റെ എല്ലാ പാപ​ങ്ങ​ളിലും സകല തിന്മ​ക​ളിലുംനിന്ന് എന്നെ മോചി​പ്പിക്കണമേ; അങ്ങേ കല്പ​ന​കളോട് എന്നെ എപ്പോഴും ചേർത്തുനിർത്താൻ ഇട​വ​രു​ത്തു​കയും ​അങ്ങിൽനിന്ന് വേർപെടാൻ ഒരി​ക്കലും അനു​വ​ദി​ക്കാതിരിക്കുകയും ചെയ്യണമേ.
+"
+                style="@style/mass_priest"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" ദിവ്യകാരുണ്യ സ്വീകരണത്തിനുള്ള ക്ഷണം  "
+                style="@style/mass_header"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" പുരോ​ഹി​തൻ  തന്‍റെ സ്വകാര്യപ്രാര്‍ത്ഥന കഴിഞ്ഞ് മുട്ടുകുത്തി വണങ്ങിയശേഷം തിരുവോസ്തി എടുത്ത് തളികയുടെ മുകളില്‍ അല്‍പ്പം ഉയര്‍ത്തിപ്പിടിച്ച്, ഉയര്‍ന്ന സ്വരത്തില്‍ ചൊല്ലുന്നു:  "
+                style="@style/mass_comments"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" ഇതാ ദൈവത്തിന്‍റെ കുഞ്ഞാട്.
+ഇതാ ലോകത്തിന്‍റെ പാപങ്ങള്‍ നീക്കുന്നവന്‍.
+ദിവ്യകുഞ്ഞാടിന്‍റെ വിരുന്നിന് ക്ഷണിക്കപ്പെട്ടിരിക്കുന്നവര്‍ ഭാഗ്യവാന്മാര്‍. "
+                style="@style/mass_priest"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" തുടര്‍ന്ന്, ജനങ്ങളോടൊന്നിച്ച് ഒരു പ്രാവശ്യം ചൊല്ലുന്നു:  "
+                style="@style/mass_comments"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="കർത്താ​വേ/ അങ്ങ് എന്റെ ഭവനത്തിൽ പ്രവേ​ശി​ക്കാൻ ഞാൻ യോഗ്യ​നല്ല;/ അങ്ങ് ഒരു വാക്ക് ഉച്ചരിച്ചാൽ മാത്രം മതി/ എന്റെ ആത്മാവു സുഖംപ്രാ​പി​ക്കും.
+  "
+                style="@style/mass_people"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" ബലി​പീ​ഠ​ത്തി​നു​നേരേ തി​രിഞ്ഞ് പുരോ​ഹി​തൻ സ്വഗതമായി ചൊല്ലുന്നു:  "
+                style="@style/mass_comments"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  ക്രിസ്തു​വിന്റെ ശ​രീരം എന്നെ നിത്യ​ജീ​വി​ത​ത്തി​നായി സംര​ക്ഷി​ക്ക​ട്ടെ. ഭക്ത്യാ​ദ​ര​പൂർവം ക്രിസ്തു​വിന്റെ ശരീരം ഉൾക്കൊ​ള്ളു​ന്നു."
+                style="@style/mass_priest"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" അന​ന്തരം പാന​പാത്രമെ​ടുത്ത് സ്വഗതമായി ചൊല്ലുന്നു:  "
+                style="@style/mass_comments"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  ക്ക്രിസ്തു​വിന്റെ രക്തം എന്നെ നിത്യ​ജീ​വി​ത​ത്തി​നായി സംര​ക്ഷി​ക്ക​ട്ടെ."
+                style="@style/mass_priest"
+                />
 
             <View
                 android:background="#ff000000"
