@@ -10,9 +10,11 @@ import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.text.Html;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 
@@ -72,6 +74,15 @@ public class ReadingFragment extends Fragment {
                 newFragment.show(getActivity().getFragmentManager(), "datePicker");
             }
         });
+        LinearLayout layout = rootView.findViewById(R.id.layout_main);
+        CoordinatorLayout.LayoutParams lp = new CoordinatorLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+        TypedValue tv = new TypedValue();
+        if (getActivity().getTheme().resolveAttribute(android.R.attr.actionBarSize, tv, true)) {
+            int actionBarHeight = TypedValue.complexToDimensionPixelSize(tv.data, getResources().getDisplayMetrics());
+            lp.setMargins(0, -actionBarHeight, 0, 0);
+            layout.setLayoutParams(lp);
+        }
+
         container = (LinearLayout)rootView.findViewById(R.id.container);
         updateLayout = (LinearLayout)rootView.findViewById(R.id.update_layout);
         heading = (TextView)rootView.findViewById(R.id.heading);
@@ -311,7 +322,7 @@ public class ReadingFragment extends Fragment {
         try {
 
             min = formatter.parse("14-5-2016");
-            max = formatter.parse("30-6-2022");
+            max = formatter.parse("30-4-2023");
             objDate= formatter.parse(date);
             if((objDate.compareTo(min)>=0 && objDate.compareTo(max)<=0 )||objDate.compareTo(formatter.parse("9-5-2016"))==0)
             {
@@ -327,7 +338,7 @@ public class ReadingFragment extends Fragment {
         }
         else if(withtoast)
         {
-            Toast.makeText(getActivity().getApplicationContext(), "Please enter a date between 14th May 2016 and 30th June 2022", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity().getApplicationContext(), "Please enter a date between 14th May 2016 and 30th April  2023", Toast.LENGTH_SHORT).show();
         }
         else{
             addUpdatefragment();
