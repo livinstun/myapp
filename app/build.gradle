@@ -8,8 +8,8 @@ android {
         applicationId "com.livin.vedapadakam"
         minSdkVersion 17
         targetSdkVersion 33
-        versionCode 46
-        versionName "9.3"
+        versionCode 47
+        versionName "9.7"
     }
     buildTypes {
         release {
